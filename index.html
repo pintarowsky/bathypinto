@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary_large_image">
 
 <meta name="theme-color" content="#26a0c9" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#26a0c9" media="(prefers-color-scheme: dark)">
+<meta property="theme-color" content="#26a0c9" media="(prefers-color-scheme: dark)">
 <meta name="color-scheme" content="light dark">
 
 <link rel="icon" href="assets/img/favicon/favicon.svg" type="image/svg+xml">
@@ -30,15 +30,6 @@
 <link rel="manifest" href="site.webmanifest">
 <link rel="preload" as="image" href="assets/img/portrait-hero.webp" type="image/webp" fetchpriority="high">
 <link rel="stylesheet" href="assets/css/site.css">
-<script>
-/* Runs before first paint: sets the saved theme (no flash) and arms the reveal
-   animation only when JS and IntersectionObserver are actually available. */
-(function(d){
-  try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")d.setAttribute("data-theme",t);}catch(e){}
-  if("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches)
-    d.classList.add("js");
-})(document.documentElement);
-</script>
 
 <script type="application/ld+json">
 {
@@ -46,8 +37,8 @@
   "@type": "Person",
   "name": "Bathy Pinto",
   "jobTitle": "Role Title",
-  "url": "https://example.netlify.app/",
-  "image": "https://example.netlify.app/assets/img/portrait-hero.jpg",
+  "url": "https://pintarowsky.github.io/bathypinto/",
+  "image": "https://pintarowsky.github.io/bathypinto/assets/img/portrait-hero.jpg",
   "sameAs": ["https://www.linkedin.com/in/bathypinto/"],
   "knowsAbout": ["Capability one", "Capability two", "Capability three", "Capability four"]
 }
